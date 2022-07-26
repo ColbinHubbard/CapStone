@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default html`
+export default () => html`
 <body>
 <div class="text">
   <p>Click on the "Choose File" button to upload a file</p>

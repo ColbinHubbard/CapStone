@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default html`
+export default () => html`
   <body>
     <p>Search for your favorite Artist from any genre.</p>
     <div id="Form">

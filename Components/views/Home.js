@@ -1,25 +1,6 @@
 import html from "html-literal";
 
-export default html`
-
-<header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>Music Website</title>
-    <link rel="stylesheet" href="./style.css">
-<div class="Nav-bar">
-  <nav>
-    <ul class="Nav">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./Search.html">Search</a></li>
-      <li><a href="./About.html">About</a></li>
-      <li><a href="./Upload.html">Upload Song</a></li>
-
-    </ul>
-  </nav>
-</div>
-</header>
-
+export default () => html`
 <body>
   <div class="content">
 
