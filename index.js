@@ -31,6 +31,7 @@ router.hooks({
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Home";
+    done();
   }
 });
 
