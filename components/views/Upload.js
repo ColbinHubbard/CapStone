@@ -1,7 +1,8 @@
 import html from "html-literal";
 
 export default () => html`
-<body>
+
+<body class="bod2">
 <div class="text">
   <p>Click on the "Choose File" button to upload a file</p>
 </div>
@@ -18,5 +19,5 @@ export default () => html`
 
 </div>
 </body>
-<link rel="stylesheet" href="./Upload.css">
+<link rel="stylesheet" href="./style.css">
 `;

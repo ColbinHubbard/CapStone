@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <body>
+  <body class="bod2">
     <p>Search for your favorite Artist from any genre.</p>
     <div id="Form">
       <label for="text">Type here!</label>
@@ -13,5 +13,5 @@ export default () => html`
       />
     </div>
   </body>
-  <link rel="stylesheet" href="./Search.css" />
+  <link rel="stylesheet" href="./style.css" />
 `;

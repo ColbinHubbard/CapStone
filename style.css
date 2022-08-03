@@ -12,7 +12,7 @@
   top: 300px;
 }
 
-.Nav-bar{
+.Nav{
   width: 80%;
   margin: auto;
   padding: 15px;
@@ -21,13 +21,13 @@
   justify-content: space-between;
 }
 
-.Nav-bar ul li{
+.Nav ul li{
   list-style: none;
   display: inline-block;
   margin: 0 15px;
 }
 
-.Nav-bar ul li a{
+.Nav ul li a{
   text-decoration: underline;
   color: teal;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -72,3 +72,55 @@
   background-image:url(https://static.vecteezy.com/system/resources/previews/002/790/929/original/headphone-listening-device-with-music-melody-on-blue-splotch-free-vector.jpg);
   width: 100%;;
 }
+form{
+  border: solid; color: black;
+  border-width: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  position: relative;
+  padding-bottom: 30px;
+  width: 400px;
+  left: 400px;
+  background-color: teal;
+}
+
+
+.about {
+  border: solid; color: black;
+  border-width: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  position: relative;
+  padding-bottom: 30px;
+  width: 400px;
+  left: 400px;
+  background-color: teal;
+}
+  body.bod{
+    background-color: black;
+    background-image:url(https://img.freepik.com/free-vector/musical-melody-symbols-bright-blue-splotch_1308-70426.jpg?t=st=1658700402~exp=1658701002~hmac=0b0393757c6f478da7739f4422a501caee392880df4ee143ff39d43ccccfde78&w=1060);
+    width:100%;
+  }
+
+
+  .info{
+    display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+
+    }
+    .info ul li a{
+      text-decoration: underline;
+      color: rgb(202, 255, 246);
+    }
+
+    #Form{
+      display: flex;
+    justify-content: center;
+    }

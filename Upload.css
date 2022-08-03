@@ -54,3 +54,7 @@ form{
   left: 400px;
   background-color: teal;
 }
+#Form{
+  display: flex;
+justify-content: center;
+}
