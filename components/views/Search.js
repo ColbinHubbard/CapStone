@@ -13,5 +13,4 @@ export default () => html`
       />
     </div>
   </div>
-  <link rel="stylesheet" href="./style.css" />
 `;

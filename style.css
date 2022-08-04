@@ -100,12 +100,14 @@ form{
   padding-bottom: 30px;
   width: 400px;
   left: 400px;
-  background-color: teal;
+
 }
   .bod{
-    /* background-color: black; */
-    background-image:url(https://img.freepik.com/free-vector/musical-melody-symbols-bright-blue-splotch_1308-70426.jpg?t=st=1658700402~exp=1658701002~hmac=0b0393757c6f478da7739f4422a501caee392880df4ee143ff39d43ccccfde78&w=1060);
+    background-color: rgb(225, 20, 136);
+    /* background-image:url(https://img.freepik.com/free-vector/musical-melody-symbols-bright-blue-splotch_1308-70426.jpg?t=st=1658700402~exp=1658701002~hmac=0b0393757c6f478da7739f4422a501caee392880df4ee143ff39d43ccccfde78&w=1060);
     width:100%;
+    height: 100%; */
+
   }
 
 

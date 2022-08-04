@@ -19,5 +19,5 @@ export default () => html`
 
 </div>
 </body>
-<link rel="stylesheet" href="./style.css">
+
 `;
