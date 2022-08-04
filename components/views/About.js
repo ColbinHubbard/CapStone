@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
 <div class="about">
-  <body class="bod2">
+  <body class="bod">
     <p>
     Sound check was made for the purpose of keeping music networking organic and making sure
     the art of music is preserved. We care about the authenticity and creativity of music, regardless which genre.
