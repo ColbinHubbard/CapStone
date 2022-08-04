@@ -1,9 +1,9 @@
 import html from "html-literal";
 
 export default () => html`
-  <body class="bod2">
+  <div class="bod">
     <p>Search for your favorite Artist from any genre.</p>
-    <div id="Form">
+    <div id="orm">
       <label for="text">Type here!</label>
       <input
         type="text"
@@ -12,6 +12,6 @@ export default () => html`
         length="50px"
       />
     </div>
-  </body>
+  </div>
   <link rel="stylesheet" href="./style.css" />
 `;
