@@ -3,7 +3,7 @@ import html from "html-literal";
 export default () => html`
   <div class="bod">
     <p>Search for your favorite Artist from any genre.</p>
-    <div id="orm">
+    <div id="form">
       <label for="text">Type here!</label>
       <input
         type="text"

@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
 
-<body class="bod2">
+<body class="bod">
 <div class="text">
   <p>Click on the "Choose File" button to upload a file</p>
 </div>
