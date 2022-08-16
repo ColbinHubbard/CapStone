@@ -56,7 +56,7 @@ app.get("/echo/:content", (request, response) => {
   response.send(JSON.stringify({ echoed: content }));
 });
 
-app.use("/song", Song);
+app.use("/songs", Song);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040

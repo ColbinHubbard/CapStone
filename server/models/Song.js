@@ -9,7 +9,7 @@ const songSchema = new mongoose.Schema({
   Song: {
     type: String,
     required: true,
-    enum: ["thin", "chicago", "deep-dish", "hella-thick"]
+    validate: /^[A-Za-z0-9 ]*$/
   },
   Album: {
     type: String,

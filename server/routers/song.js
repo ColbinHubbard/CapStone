@@ -1,31 +1,31 @@
 const { Router } = require("express");
-const Search = require("../models/Song");
+const Song = require("../models/Song");
 const router = Router();
 
 // Create record in MongoDB Atlas using Mongoose.js ORM
 router.post("/", (request, response) => {
-  const newSearch = new Search(request.body);
-  newSearch.save((error, record) => {
+  const newSong = new Song(request.body);
+  newSong.save((error, record) => {
     if (error) return response.status(500).json(error);
     return response.json(record);
   });
 });
 // Get (read) all records from the collection
 router.get("/", (request, response) => {
-  Search.find({}, (error, record) => {
+  Song.find({}, (error, record) => {
     if (error) return response.status(500).json(error);
     return response.json(record);
   });
 });
 // Get a single record by ID using a query parameter
 router.get("/:id", (request, response) => {
-  Search.findById(request.params.id, (error, record) => {
+  Song.findById(request.params.id, (error, record) => {
     if (error) return response.status(500).json(error);
     return response.json(record);
   });
 });
 router.delete("/:id", (request, response) => {
-  Search.findByIdAndRemove(request.params.id, {}, (error, record) => {
+  Song.findByIdAndRemove(request.params.id, {}, (error, record) => {
     if (error) return response.status(500).json(error);
     return response.json(record);
   });
@@ -33,15 +33,13 @@ router.delete("/:id", (request, response) => {
 
 router.put("/:id", (request, response) => {
   const body = request.body;
-  Search.findByIdAndUpdate(
+  Song.findByIdAndUpdate(
     request.params.id,
     {
       $set: {
-        // Take note that the customer is not included, so it can't
-        crust: body.crust,
-        cheese: body.cheese,
-        sauce: body.sauce,
-        toppings: body.toppings
+        Artist: body.Artist,
+        Song: body.Song,
+        Album: body.Album
       }
     },
     {
