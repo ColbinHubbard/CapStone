@@ -12,7 +12,7 @@ export default () => html`
     <input type="submit">
   </form>
     <form action="/Song name"><pre>
-      <input type="text"name="Song" placeholder="Song Title">
+      <input type="text"name="Song" placeholder="Song">
       <input type="text"name="Artist" placeholder="Artist">
       <input type="text"name="Album" placeholder="Album"></pre>
     </form>
