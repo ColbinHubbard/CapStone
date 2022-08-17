@@ -9,7 +9,6 @@ export default () => html`
       authenticity and creativity of music, regardless which genre. To us, good
       music is merely so....GOOD MUSIC.
     </p>
-    <p><pre>Info</pre></p>
   </div>
   <div class="info">
     <ul>
