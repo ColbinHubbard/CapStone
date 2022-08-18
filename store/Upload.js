@@ -1,4 +1,5 @@
 export default {
   header: "Upload Page",
-  view: "Upload"
+  view: "Upload",
+  songs: []
 };

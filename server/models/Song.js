@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 
 const songSchema = new mongoose.Schema({
-  Artist: {
+  artist: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  Song: {
+  song: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  Album: {
+  album: {
     type: String,
     validate: /^[A-Za-z0-9 ]*$/
   }

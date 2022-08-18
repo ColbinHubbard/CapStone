@@ -17,6 +17,11 @@ db.once(
   console.log.bind(console, "Successfully opened connection to Mongo!")
 );
 
+const logging = (request, response, next) => {
+  console.log(`${request.method} ${request.url} ${Date.now()}`);
+  next();
+};
+
 // CORS Middleware
 const cors = (req, res, next) => {
   res.setHeader(
@@ -31,10 +36,7 @@ const cors = (req, res, next) => {
   res.setHeader("Access-Control-Allow-Credentials", true);
   next();
 };
-const logging = (request, response, next) => {
-  console.log(`${request.method} ${request.url} ${Date.now()}`);
-  next();
-};
+
 app.use(cors);
 app.use(express.json());
 app.use(logging);
