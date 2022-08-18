@@ -39,7 +39,7 @@ function afterRender(state) {
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.SONG_API}`, requestData)
+        .post(`${process.env.SONG_API}/songs`, requestData)
         .then(response => {
           // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Upload.songs.push(response.data);
