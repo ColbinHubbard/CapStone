@@ -19,11 +19,37 @@ function render(state = store.Home) {
   router.updatePageLinks();
   afterRender(state);
 }
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".Nav-bar").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  if (state.view === "Upload") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      const requestData = {
+        artist: inputList.artist.value,
+        album: inputList.album.value,
+        song: inputList.song.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.SONG_API}`, requestData)
+        .then(response => {
+          // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+          store.Upload.songs.push(response.data);
+          router.navigate("/songs");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 router.hooks({
   before: (done, params) => {

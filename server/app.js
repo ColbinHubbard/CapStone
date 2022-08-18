@@ -1,6 +1,6 @@
 // 'Import' the Express module instead of http
 const express = require("express");
-const Song = require("./routers/song");
+const Song = require("./routers/songs");
 // Initialize the Express application
 const app = express();
 
